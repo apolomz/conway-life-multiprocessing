@@ -1,6 +1,6 @@
-import sys
-from src.gui import ejecutar_gui
+"""Launch the Pygame interface from the project root."""
+
+from Gui.gui.app import ConwayApp
 
 if __name__ == "__main__":
-    modo_ejecucion = "secuencial" if "--secuencial" in sys.argv else "paralelo"
-    ejecutar_gui(modo=modo_ejecucion)
+    ConwayApp().run()
